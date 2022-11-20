@@ -18,3 +18,28 @@ To Create manually, just simply :
 - run : `npm init -y`
 - run : `npm i typescript --save-dev`
 - run : `npm i @types/node --save-dev`
+- run : `tsc --init`
+- run : `npm i --save-dev ts-node nodemon`
+- create file : `nodemon.json`
+#### tsconfig.json
+```
+{
+  "compilerOptions": {
+    "sourceMap": true,
+    "outDir": "dist",
+    "rootDir": "src/",
+    "allowSyntheticDefaultImports": true,
+    "strict": true,
+    "target": "es6",
+    "lib": [
+      "esnext"
+    ],
+    "moduleResolution": "Node",
+    "esModuleInterop": true,
+    "module": "CommonJS",
+  }
+}
+```
+
+#### Compile & Run the Program
+run : `npx tsc`
