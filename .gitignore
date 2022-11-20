@@ -133,4 +133,4 @@ dist
 .idea
 
 # vscode
-dist
+build

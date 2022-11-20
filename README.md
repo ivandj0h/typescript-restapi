@@ -21,6 +21,7 @@ To Create manually, just simply :
 - run : `tsc --init`
 - run : `npm i --save-dev ts-node nodemon`
 - create file : `nodemon.json`
+- install/run : `npm i --save-dev rimraf`
 #### tsconfig.json
 ```
 {
@@ -38,6 +39,17 @@ To Create manually, just simply :
     "esModuleInterop": true,
     "module": "CommonJS",
   }
+}
+```
+#### nodemon.json
+```
+{
+    "watch": [
+        "src"
+    ],
+    "ext": "ts, .js",
+    "ignore": [],
+    "exec": "ts-node ./src/index.ts"
 }
 ```
 
