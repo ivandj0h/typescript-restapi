@@ -17,9 +17,10 @@ To Create manually, just simply :
 - create folder ( `mkdir <folder_name>` )
 - run : `npm init -y`
 - run : `npm i typescript --save-dev`
-- run : `npm i @types/node --save-dev`
+- run : `npm i @types/node @types/express --save-dev`
 - run : `tsc --init`
 - run : `npm i --save-dev ts-node nodemon`
+- run : `npm i dotenv`
 - create file : `nodemon.json`
 - install/run : `npm i --save-dev rimraf`
 #### tsconfig.json
@@ -54,4 +55,5 @@ To Create manually, just simply :
 ```
 
 #### Compile & Run the Program
-run : `npx tsc`
+compile run : `npx tsc`
+development run : `npm run start:dev`
