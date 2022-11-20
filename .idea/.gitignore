@@ -3,3 +3,6 @@
 /workspace.xml
 # Editor-based HTTP Client requests
 /httpRequests/
+modules.xml
+rest-api.xml
+vcs.xml
